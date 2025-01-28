@@ -14,7 +14,7 @@ ini_set("pcre.backtrack_limit", "500000000");
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Que extends CI_Controller {
-
+ 
     // Main entry point for the controller
     public function index(){
         $this->db->query("UPDATE report_list SET status = 'qweqwe'");
