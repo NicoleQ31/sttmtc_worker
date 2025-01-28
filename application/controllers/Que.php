@@ -17,7 +17,7 @@ class Que extends CI_Controller {
  
     // Main entry point for the controller
     public function index(){
-        $this->db->query("UPDATE report_list SET status = 'qweqwe'");
+        // $this->db->query("UPDATE report_list SET status = 'qweqwe'");
         // sleep(1); // Delaying execution for 5 seconds (could be for load balancing or delay purpose)
         
         // Check if there are pending, ongoing or rendering reports

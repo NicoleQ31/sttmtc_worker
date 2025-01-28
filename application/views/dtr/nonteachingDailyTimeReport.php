@@ -111,7 +111,7 @@
                                     $lastDataIndexPerDate = count($att_date)-1; //Para makuha yung pinaka last out nya 
 
                                     $PM_arrival = (isset($att_date[$lastDataIndexPerDate]) && count($att_date) > 1 ? $att_date[$lastDataIndexPerDate]->actlog_time_in:'');
-                                    $PM_departure = (isset($lastDataIndexPerDate) && count($att_date) > 1 ? $this->time->$att_date[$lastDataIndexPerDate]->actlog_time_out:'');
+                                    $PM_departure = (isset($lastDataIndexPerDate) && count($att_date) > 1 ?$att_date[$lastDataIndexPerDate]->actlog_time_out:'');
 
                                     $late = $this->time->exp_time($att_date[0]->late);
                                     $undertime = $this->time->exp_time($att_date[0]->undertime);
